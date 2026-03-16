@@ -4,27 +4,36 @@
     {
         int[] numbers = { 11, 27, 38 };
 
-        int[] result = ArrayResize(numbers, 14, 25, 12, 17);
-
-        for (int i = 0; i < result.Length; i++)
-        {
-            Console.Write($"{result[i]}, ");
-        }
+        ArrayResize(numbers, 14, 25, 12, 17,7);
     }
 
-    public static int[] ArrayResize(int[] numbers, params int[] arr)
+    public static void ArrayResize (int[] numbers, params int[] arr)
     {
-        int[] result = new int[numbers.Length + arr.Length];
+        int[] newArr = new int[numbers.Length + arr.Length];
 
         for (int i = 0; i < numbers.Length; i++)
         {
-            result[i] = numbers[i];
+            newArr[i] = numbers[i];
         }
 
         for (int i = 0; i < arr.Length; i++)
         {
-            result[numbers.Length + i] = arr[i];
+            newArr[newArr.Length - arr.Length] = arr[i];
         }
-        return result;
+
+        newArr[newArr.Length-arr.Length]=arr[0];
+        newArr[newArr.Length-arr.Length+1]=arr[1];
+        newArr[newArr.Length-arr.Length+2]=arr[2];
+        newArr[newArr.Length-arr.Length+3]=arr[3];
+        newArr[newArr.Length-arr.Length+4]=arr[4];
+  
+
+        numbers = newArr;
+
+        for (int i = 0; i < newArr.Length; i++)
+        {
+            Console.Write($"{newArr[i]}, ");
+        }
+        
     }
 }
