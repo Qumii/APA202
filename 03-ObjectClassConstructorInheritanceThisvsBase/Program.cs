@@ -26,7 +26,7 @@ namespace _03_ObjectClassConstructorInheritanceThisvsBase
 
             administrator.GrantAccess(student);
 
-            Student student1 = new("Konul", "Rasulova", 21, "konull", 3, "3", "ITT", 88.5, 4);
+            Student student1 = new("Lale", "Abbasova", 21, "lale.a", 3, "3", "ITT", 88.5, 4);
             Student student2 = new("Roya", "Amiraslanli", 22, "roya", 2, "1", "ITT", 92.0, 4);
             Student student3 = new("Gunay", "Aliyeva", 21, "gunai", 4, "6", "EA", 68.5, 3);
 
