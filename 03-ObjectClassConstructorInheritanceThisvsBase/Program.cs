@@ -41,9 +41,9 @@ namespace _03_ObjectClassConstructorInheritanceThisvsBase
             Teacher teacher2 = new("Ali", "Khalilov", 35, "ali.khalilov", 3, "Komputer texnologiyalari", "Sebeke", 1500, 8);
 
             teacher1.ShowTeacherInfo();
-            Console.WriteLine($"{teacher1.FirstName} {teacher.LastName} adli muellimin maasi: {teacher1.CalculateSalary()} AZN");
+            Console.WriteLine($"{teacher1.FirstName} {teacher1.LastName} adli muellimin maasi: {teacher1.CalculateSalary()} AZN");
             teacher2.ShowTeacherInfo();
-            Console.WriteLine($"{teacher2.FirstName} {teacher.LastName} adli muellimin maasi: {teacher2.CalculateSalary()} AZN");
+            Console.WriteLine($"{teacher2.FirstName} {teacher2.LastName} adli muellimin maasi: {teacher2.CalculateSalary()} AZN");
 
             Administrator administrator1 = new("Leyla", "Memmedova", 50, "leila.mm", 5, "Dekan", "Komputer texnologiyalari", 2);
 
