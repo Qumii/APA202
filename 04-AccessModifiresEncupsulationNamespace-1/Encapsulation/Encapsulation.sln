@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-AccessModifiresEncupsulationNamespace", "04-AccessModifiresEncupsulationNamespace\04-AccessModifiresEncupsulationNamespace.csproj", "{183C9A88-7AF6-4D03-B353-93D0890DB193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{7D377864-4740-4B11-A0CF-6E349E53018D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{183C9A88-7AF6-4D03-B353-93D0890DB193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183C9A88-7AF6-4D03-B353-93D0890DB193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183C9A88-7AF6-4D03-B353-93D0890DB193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183C9A88-7AF6-4D03-B353-93D0890DB193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D377864-4740-4B11-A0CF-6E349E53018D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D377864-4740-4B11-A0CF-6E349E53018D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D377864-4740-4B11-A0CF-6E349E53018D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D377864-4740-4B11-A0CF-6E349E53018D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4ABA137-9A16-4FA8-8836-921A7DB30DFE}
+	EndGlobalSection
+EndGlobal
