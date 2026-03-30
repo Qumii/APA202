@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|c:\\users\\ulvee\\desktop\\apa202\\08-staticlassextensionmethodsexceptions\\exceptions\\incorrectpasswordexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|solutionrelative:exceptions\\incorrectpasswordexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|c:\\users\\ulvee\\desktop\\apa202\\08-staticlassextensionmethodsexceptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|c:\\users\\ulvee\\desktop\\apa202\\08-staticlassextensionmethodsexceptions\\models\\loginsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|solutionrelative:models\\loginsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|c:\\users\\ulvee\\desktop\\apa202\\08-staticlassextensionmethodsexceptions\\exceptions\\invalidusernameexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|solutionrelative:exceptions\\invalidusernameexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|c:\\users\\ulvee\\desktop\\apa202\\08-staticlassextensionmethodsexceptions\\exceptions\\accountlockedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|solutionrelative:exceptions\\accountlockedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|c:\\users\\ulvee\\desktop\\apa202\\08-staticlassextensionmethodsexceptions\\exceptions\\invalidpasswordexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|solutionrelative:exceptions\\invalidpasswordexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|c:\\users\\ulvee\\desktop\\apa202\\08-staticlassextensionmethodsexceptions\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|solutionrelative:exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|c:\\users\\ulvee\\desktop\\apa202\\08-staticlassextensionmethodsexceptions\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50FECE3-4BE6-4E59-8FD2-B8E6A9AB3D48}|08-StatiClassExtensionMethodsExceptions.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountLockedException.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\AccountLockedException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\AccountLockedException.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\AccountLockedException.cs",
+              "RelativeToolTip": "Exceptions\\AccountLockedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:30:19.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:17:07.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IncorrectPasswordException.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\IncorrectPasswordException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\IncorrectPasswordException.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\IncorrectPasswordException.cs",
+              "RelativeToolTip": "Exceptions\\IncorrectPasswordException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:29:40.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\UserNotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\UserNotFoundException.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\UserNotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\UserNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:29:06.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InvalidPasswordException.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\InvalidPasswordException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\InvalidPasswordException.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\InvalidPasswordException.cs",
+              "RelativeToolTip": "Exceptions\\InvalidPasswordException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:28:42.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InvalidUsernameException.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\InvalidUsernameException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\InvalidUsernameException.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Exceptions\\InvalidUsernameException.cs",
+              "RelativeToolTip": "Exceptions\\InvalidUsernameException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:28:14.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginSystem.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Models\\LoginSystem.cs",
+              "RelativeDocumentMoniker": "Models\\LoginSystem.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Models\\LoginSystem.cs",
+              "RelativeToolTip": "Models\\LoginSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:27:18.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\08-StatiClassExtensionMethodsExceptions\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:27:00.565Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
