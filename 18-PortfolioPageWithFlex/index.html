@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Start Bootstrap</title>
@@ -27,24 +34,114 @@
     </header>
 
     <main>
-        <section id="hero">
-            <div class="main">
-                <div class="image"><img src="./assets/images/avataaars.svg" alt=""></div>
-                <h1 class="title">Start Bootstrap</h1>
-                <div class="star">
-                    <div class="left_line"></div>
-                    <i></i>
-                    <div class="right_line"></div>
-                    
-                </div>
-                <p class="text">Graphic Artist - Web Designer - Illustrator</p>
+      <section id="hero">
+        <div class="main">
+          <div class="image">
+            <img src="./assets/images/avataaars.svg" alt="" />
+          </div>
+          <h1 class="title">Start Bootstrap</h1>
+          <div class="star">
+            <div class="left_line"></div>
+            <i class="fa-solid fa-star fa-2xl"></i>
+            <div class="right_line"></div>
+          </div>
+          <p class="text">Graphic Artist - Web Designer - Illustrator</p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+          <div class="port_title">
+            <h2 class="title">Portfolio</h2>
+            <div class="star">
+              <div class="left_line"></div>
+              <i class="fa-solid fa-star fa-2xl"></i>
+              <div class="right_line"></div>
             </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/images/cabin.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/images/cake.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/images/circus.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/images/game.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/images/safe.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/images/submarine.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="about">
+        <div class="container">
+          <div class="about_title">
+            <h2 class="title">About</h2>
+            <div class="star">
+              <div class="left_line"></div>
+              <i class="fa-solid fa-star fa-2xl"></i>
+              <div class="right_line"></div>
+            </div>
+          </div>
 
-        </section>
+          <div class="about_content">
+            <div class="text_about">
+              <p class="lead">
+                Freelancer is a free bootstrap theme created by Start Bootstrap.
+                The download includes the complete source files including HTML,
+                CSS, and JavaScript as well as optional SASS stylesheets for
+                easy customization.
+              </p>
+            </div>
+            <div class="text_about">
+              <p class="lead">
+                You can create your own custom avatar for the masthead, change
+                the icon in the dividers, and add your email address to the
+                contact form to make it fully functional!
+              </p>
+            </div>
+          </div>
+          <div class="button_ab">
+            <button>
+              <i class="fa-solid fa-download fa"></i> Free Download!
+            </button>
+          </div>
+        </div>
+      </section>
 
+      <section id="contact">
+        <div class="container">
+          <div class="con_title">
+            <h2 class="title">Contact</h2>
+            <div class="star">
+              <div class="left_line"></div>
+              <i class="fa-solid fa-star fa-2xl"></i>
+              <div class="right_line"></div>
+            </div>
+          </div>
 
-
+          <form action="" class="contact_form">
+            <label for="name">Full name</label>
+            <input type="text" id="name" required />
+            <label for="email">Email address</label>
+            <input type="email" id="email" required />
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" required />
+            <label for="messsage">Message</label>
+            <textarea name="" id="messsage" rows="5" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
