@@ -16,6 +16,7 @@
   right: 0;
   left: 0;
   top: 0;
+  z-index: 100;
 
 }
 
@@ -156,21 +157,43 @@
   width: 400px;
   height: 300px;
   border-radius: 8px;
+  position: relative;
+}
+.card:hover{
+  .plus{
+    display: flex;
+  }
+  .back{
+    display: flex;
+  }
+}
+
+.back{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: absolute;
+background-color: #1abc9cc1;
+display: none;
+}
+
+.plus{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 70px;
+  display: none;
 }
 
 .card img {
   width: 100%;
+  height: 100%;
   border-radius: 8px;
 }
-.card img:hover{
 
-}
 
-.card .card_hover{
-  width: 400px;
-  height: 300px;
-  border-radius: 8px;
-}
 #about {
   background-color: #1abc9c;
   color: white;
@@ -384,4 +407,12 @@ margin-bottom: 24px
  padding: 14px;
  font-size: 20px;
  margin: 0 5px;
+ transition: all 0.2s;
 }
+
+.web i:hover{
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
+}
+
