@@ -1,0 +1,138 @@
+main {
+  margin-top: 56px;
+}
+#header{
+    width: 100%;
+}
+#header .container{
+width: 1300px;
+}
+#hero {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url(../images/bg-masthead.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 655px;
+  color: rgb(255, 255, 255);
+}
+.navbar{
+    padding: 16px 0;
+
+}
+.navbar-brand{
+   font-family: "Merriweather Sans", sans-serif;
+    font-weight: 600;
+}
+.nav-link{
+    font-family: "Merriweather Sans", sans-serif;
+      font-size: 14px;
+      color: black;
+      font-weight: 600;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+  color: #ff0000; 
+  background: none;
+}
+
+.main_content {
+  position: relative;
+  text-align: center;
+    width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_content h1 {
+  font-size: 56px;
+  padding: 0 150px;
+}
+.main_content p {
+    color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  padding: 0 150px;
+  font-family: "Merriweather", serif;
+}
+.line {
+    width: 52px;
+    height: 3.2px;
+    background-color: #f4623a;
+    border-top: 1px solid black;
+    margin: 24px auto;
+}
+
+.btn-find{
+    font-size: 14px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 160px;
+    background-color:#f4623a;
+    padding: 20px 36px;
+    text-transform: uppercase;
+}
+.btn-find a{
+    color: white;
+}
+
+.about{
+    width: 100%;
+    height: 480px;
+    background-color: #f4623a;
+}
+
+
+
+.about_content {
+  text-align: center;
+    width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_content h2 {
+    color: white;
+  font-size: 32px;
+  padding: 0 150px;
+}
+.about_content p {
+    color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  padding: 0 150px;
+  font-family: "Merriweather", serif;
+}
+.line2 {
+    width: 52px;
+    height: 3.2px;
+    background-color: #ffffff;
+    border-top: 1px solid black;
+    margin: 24px auto;
+}
+
+.btn-start{
+    font-size: 14px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 700;
+    color: black;
+    border: none;
+    border-radius: 160px;
+    background-color:#ffffff;
+    padding: 20px 36px;
+    text-transform: uppercase;
+}
+.btn-start a{
+    color: black;
+}
