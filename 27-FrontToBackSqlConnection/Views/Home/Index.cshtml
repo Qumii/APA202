@@ -1,24 +1,25 @@
-﻿﻿@using _27_FrontToBackSqlConnection.ViewModels
-@model HomeVM
+﻿@using _27_FrontToBackSqlConnection.Models
+﻿@using _27_FrontToBackSqlConnection.ViewModels
+@model HomeVM 
 
 <!-- Begin Slider Area -->
 <div class="slider-area">
     <!-- Main Slider -->
     <div class="swiper-container main-slider swiper-arrow with-bg_white">
         <div class="swiper-wrapper">
-            @* @foreach (var slider in Model.Sliders) *@
+            @foreach (Slider slider in Model.Sliders) 
             {
                 <div class="swiper-slide animation-style-01">
                     <div class="slide-inner style-1 bg-height"
-                         data-bg-image="assets/images/slider/bg/1-1.jpg">
+                         data-bg-image="~/assets/images/slider/bg/1-1.jpg">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 order-2 order-lg-1 align-self-center">
                                     <div class="slide-content text-black">
-                                        @* <span class="offer">@slider.Subtitle</span> *@
-                                        @* <h2 class="title">@slider.Title</h2> *@
+                                         <span class="offer">@slider.Subtitle</span> 
+                                         <h2 class="title">@slider.Title</h2>
                                         <p class="short-desc">
-                                            @* @slider.Description *@
+                                            @slider.Description 
                                         </p>
                                         <div class="btn-wrap">
                                             <a class="btn btn-custom-size xl-size btn-pronia-primary"
@@ -30,7 +31,7 @@
                                     <div class="inner-img">
                                         <div class="scene fill">
                                             <div class="expand-width" data-depth="0.2">
-                                                @* <img src="~/assets/images/website-images//@slider.Image" *@
+                                                <img src="~/assets/images/website-images//@slider.Image" 
                                                      alt="Inner Image" />
                                             </div>
                                         </div>
@@ -2167,7 +2168,7 @@
 <div class="testimonial-area section-space-top-90 section-space-bottom-95">
     <div class="container-fluid">
         <div class="testimonial-bg"
-             data-bg-image="assets/images/testimonial/bg/1-1-1820x443.jpg">
+             data-bg-image="~/assets/images/testimonial/bg/1-1-1820x443.jpg">
             <div class="section-title-wrap">
                 <h2 class="section-title">What Say Client</h2>
                 <p class="section-desc mb-0">
@@ -2245,7 +2246,7 @@
 <div class="brand-area section-space-bottom-100">
     <div class="container">
         <div class="brand-bg"
-             data-bg-image="assets/images/website-images//1-1170x300.jpg">
+             data-bg-image="~/assets/images/website-images//1-1170x300.jpg">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="swiper-container brand-slider">

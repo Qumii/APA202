@@ -1,4 +1,6 @@
+using _27_FrontToBackSqlConnection.Data;
 using _27_FrontToBackSqlConnection.Models;
+using _27_FrontToBackSqlConnection.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Diagnostics;
@@ -13,13 +15,28 @@ namespace _27_FrontToBackSqlConnection.Controllers
         {
             _context = context;
         }
+
         public IActionResult Index()
         {
-            return View();
+
+            List<Slider> sliders = _context.Sliders
+                .Where(s => !s.IsDeleted)
+                .OrderBy(s => s.Order)
+                .Take(2)
+                .ToList();
+
+            HomeVM homeVM = new()
+            {
+                Sliders = sliders
+                
+
+            };
+
+            return View(homeVM);
         }
 
-       
 
-        
+
+
     }
 }
