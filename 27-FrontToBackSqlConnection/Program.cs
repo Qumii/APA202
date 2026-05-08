@@ -12,7 +12,10 @@ namespace _27_FrontToBackSqlConnection
           
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer("Server=.\\SQLEXPRESS01;Database=ProniaDB; Trusted_Connection=True; TrustServerCertificate=true"));
+            builder.Services.AddDbContext<AppDbContext>(opt =>
+            {
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("default"));
+            });
 
             var app = builder.Build();
 
