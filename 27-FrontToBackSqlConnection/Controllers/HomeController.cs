@@ -25,6 +25,7 @@ namespace _27_FrontToBackSqlConnection.Controllers
 
             List<Product> products = _context.Products
                 .Where(p => !p.IsDeleted)
+                .Take(4)
                 .Include(p => p.ProductImages)
                 .ToList();
 

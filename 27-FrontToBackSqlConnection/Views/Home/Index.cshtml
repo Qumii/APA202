@@ -156,11 +156,11 @@
                                     <div class="product-img">
                                         <a href="shop.html">
                                             <img class="primary-img"
-                                                 src="~/assets/images/website-images//@product.ProductImages.FirstOrDefault(pi=>pi.IsDeleted==true)?.Image" 
+                                                 src="~/assets/images/website-images//@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==true)?.Image" 
                                                  alt="Product Images" />
                                             <img class="secondary-img"
-                                                 src="~/assets/images/website-images//@product.ProductImages.FirstOrDefault(pi=>pi.IsDeleted==false)?.Image" 
-                                                 alt="Product Images" />
+                                                 src="~/assets/images/website-images//@product.ProductImages.FirstOrDefault(pi => pi.IsPrimary==false)?.Image" 
+                                                 alt="Product Images-1" />
                                         </a>
                                         <div class="product-add-action">
                                             <ul>
