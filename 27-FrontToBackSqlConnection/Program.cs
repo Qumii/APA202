@@ -22,6 +22,11 @@ namespace _27_FrontToBackSqlConnection
             app.UseStaticFiles();
 
             app.MapControllerRoute(
+                name: "admin",
+                pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+
+
+            app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
