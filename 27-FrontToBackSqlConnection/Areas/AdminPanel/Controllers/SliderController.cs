@@ -1,5 +1,7 @@
 ﻿using _27_FrontToBackSqlConnection.Data;
 using _27_FrontToBackSqlConnection.Models;
+using _27_FrontToBackSqlConnection.Utilities.Enums;
+using _27_FrontToBackSqlConnection.Utilities.Extentisions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -123,13 +125,15 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 
             if (newSlider.Photo != null)
             {
-                if (!newSlider.Photo.ContentType.Contains("image/"))
+                //!newSlider.Photo.ContentType.Contains("image/")
+
+                if (!slider.Photo.CheckFileType("image/"))
                 {
                     ModelState.AddModelError(nameof(Slider.Photo), "Please select an image file.");
                     return View(newSlider);
                 }
-
-                if (newSlider.Photo.Length > 2 * 1024 * 1024)
+                //newSlider.Photo.Length > 2 * 1024 * 1024
+                if (!slider.Photo.CheckFileSize(FileSize.MB,2))
                 {
                     ModelState.AddModelError(nameof(Slider.Photo), "Image size must be less than 2MB.");
                     return View(newSlider);
@@ -138,18 +142,10 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
                 string fileName = Guid.NewGuid().ToString() + Path.GetExtension(newSlider.Photo.FileName);
                 string path = Path.Combine(_env.WebRootPath, "assets", "images", "website-images", fileName);
 
-                using (FileStream stream = new FileStream(path, FileMode.Create))
-                {
-                    await newSlider.Photo.CopyToAsync(stream);
-                }
+                FileStream fileStream = new FileStream(path, FileMode.Create);
 
-                string oldPath = Path.Combine(_env.WebRootPath, "assets", "images", "website-images", slider.Image);
-                if (System.IO.File.Exists(oldPath))
-                {
-                    System.IO.File.Delete(oldPath);
-                }
+                    await newSlider.Photo.CopyToAsync(fileStream);
 
-                slider.Image = fileName;
             }
 
             slider.Title = newSlider.Title;
