@@ -4,25 +4,30 @@ namespace _25_MVCIntro.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index ()
+        public IActionResult Index ()
         {
+            //return Content("APA202");
+
+            //var student = new JsonResult(new{id=1, name="Ali",surname="Quliyev"});
+
             return View();
         }
 
-        public int? Detail(int? id)
+        public IActionResult Detail(int? id)
         {
 
-            if (id is null || id<1)
+            if (id is null || id < 1)
             {
-                throw new Exception("Id sehvdir");
+                return RedirectToAction(nameof(Error));
             }
-            return id;  
+
+            return RedirectToAction(nameof(Index),"Product");  
         }
 
 
-        public string Error()
+        public IActionResult Error()
         {
-            return "error";
+            return View();
         }
     }
 }
