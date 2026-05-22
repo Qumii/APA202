@@ -14,7 +14,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels
         [Required(ErrorMessage = "Price is required")]
         public decimal Price { get; set; }
         [Required(ErrorMessage = "Sku is required")]
-        public string Sku { get; set; }
+        public string SKU { get; set; }
         [Required(ErrorMessage = "Description is required")]
         public string Description { get; set; }
         [Required(ErrorMessage = "Category is required")]
@@ -25,16 +25,4 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels
 
     }
 }
-//namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels
 
-//{
-//    public class ProductCreateVM
-//    {
-//        public string Name { get; set; }
-//        public decimal Price { get; set; }
-//        public string Description { get; set; }
-//        public string SKU { get; set; }
-//        public int? CategoryId { get; set; }
-        
-//    }
-//}

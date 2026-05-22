@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|c:\\users\\ulvee\\desktop\\apa202\\27-fronttobacksqlconnection\\areas\\adminpanel\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|solutionrelative:areas\\adminpanel\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|c:\\users\\ulvee\\desktop\\apa202\\27-fronttobacksqlconnection\\areas\\adminpanel\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|solutionrelative:areas\\adminpanel\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,16 +15,12 @@
       "RelativeMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|solutionrelative:areas\\adminpanel\\viewmodels\\product\\productcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|c:\\users\\ulvee\\desktop\\apa202\\27-fronttobacksqlconnection\\areas\\adminpanel\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|solutionrelative:areas\\adminpanel\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|c:\\users\\ulvee\\desktop\\apa202\\27-fronttobacksqlconnection\\views\\shop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|solutionrelative:views\\shop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|c:\\users\\ulvee\\desktop\\apa202\\27-fronttobacksqlconnection\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|solutionrelative:controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|c:\\users\\ulvee\\desktop\\apa202\\27-fronttobacksqlconnection\\views\\shop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|solutionrelative:views\\shop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25E93319-EDF3-4DD7-95DD-664C5DDEB354}|27-FrontToBackSqlConnection.csproj|c:\\users\\ulvee\\desktop\\apa202\\27-fronttobacksqlconnection\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,63 +122,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Areas\\AdminPanel\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Areas\\AdminPanel\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Areas\\AdminPanel\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Areas\\AdminPanel\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAmwA0BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T09:13:11.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductCreateVM.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Areas\\AdminPanel\\ViewModels\\Product\\ProductCreateVM.cs",
               "RelativeDocumentMoniker": "Areas\\AdminPanel\\ViewModels\\Product\\ProductCreateVM.cs",
               "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Areas\\AdminPanel\\ViewModels\\Product\\ProductCreateVM.cs",
               "RelativeToolTip": "Areas\\AdminPanel\\ViewModels\\Product\\ProductCreateVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T09:08:23.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Areas\\AdminPanel\\Views\\Product\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\Product\\Create.cshtml",
               "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Areas\\AdminPanel\\Views\\Product\\Create.cshtml",
               "RelativeToolTip": "Areas\\AdminPanel\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-19T09:27:11.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ShopController.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Controllers\\ShopController.cs",
               "RelativeDocumentMoniker": "Controllers\\ShopController.cs",
               "ToolTip": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Controllers\\ShopController.cs",
               "RelativeToolTip": "Controllers\\ShopController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAIwB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-07T23:45:58.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\APA202\\27-FrontToBackSqlConnection\\Views\\Shop\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Shop\\Details.cshtml",
@@ -199,8 +199,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T14:12:57.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T14:12:57.568Z"
             },
             {
               "$type": "Document",
@@ -212,8 +211,7 @@
               "RelativeToolTip": "Areas\\AdminPanel\\Views\\Product\\Update.cshtml",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAABsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-19T20:16:59.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T20:16:59.852Z"
             },
             {
               "$type": "Document",

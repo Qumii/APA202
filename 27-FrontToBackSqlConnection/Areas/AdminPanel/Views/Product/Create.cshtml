@@ -1,83 +1,6 @@
 ﻿@using _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels
 @model ProductCreateVM
 
-
-<div class="col-md-6 grid-margin stretch-card">
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">Create Product</h4>
-            <form class="forms-sample" method="post" enctype="multipart/form-data">
-
-                <div class="form-group">
-                    <label for="MainPhoto">Main Photo</label>
-                    <input asp-for="MainPhoto" class="form-control" placeholder="Main Photo" accept="image/*">
-                    <span asp-validation-for="MainPhoto" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label for="HoverPhoto">Secondary Photo</label>
-                    <input asp-for="HoverPhoto" class="form-control" placeholder="Secondary Photo" accept="image/*">
-                    <span asp-validation-for="HoverPhoto" class="text-danger"></span>
-                </div>
-                @* <div class="form-group">
-                    <label for="AdditionalPhotos">Additional Photos</label>
-                    <input asp-for="AdditionalPhotos" class="form-control" placeholder="Additional Photos">
-                    <span asp-validation-for="AdditionalPhotos" class="text-danger"></span>
-                </div> *@
-                <div class="form-group">
-                    <label for="Name">Name</label>
-                    <input asp-for="Name" class="form-control" placeholder="Name">
-                    <span asp-validation-for="Name" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label for="Price">Price</label>
-                    <input asp-for="Price" class="form-control" placeholder="Price">
-                    <span asp-validation-for="Price" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label for="Sku">Sku</label>
-                    <input asp-for="Sku" class="form-control" placeholder="Sku">
-                    <span asp-validation-for="Sku" class="text-danger"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="CategoryId">Category</label>
-                    <select asp-for="CategoryId" asp-items="new SelectList(Model.Categories, nameof(Category.Id), nameof(Category.Name))" class="form-control">
-                        <option value="" disabled selected>Choose Category</option>
-                    </select>
-                    <span asp-validation-for="CategoryId" class="text-danger"></span>
-                </div>
-
-                @* <div class="form-group">
-                    <label for="TagIds">Tag</label>
-                    <select asp-for="TagIds" asp-items="new SelectList(Model.Tags, nameof(Tag.Id), nameof(Tag.Name))" class="form-control">
-                        <option value="" disabled selected>Choose Tag</option>
-                    </select>
-                    <span asp-validation-for="TagIds" class="text-danger"></span>
-                </div> *@
-
-                <div class="form-group">
-                    <label for="Description">Description</label>
-                    <textarea asp-for="Description" class="form-control" placeholder="Description"></textarea>
-                    <span asp-validation-for="Description" class="text-danger"></span>
-                </div>
-
-                <button type="submit" class="btn btn-primary me-2">Submit</button>
-                <a asp-action="index" class="btn btn-light">Cancel</a>
-            </form>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-@* @using _27_FrontToBackSqlConnection.Areas.AdminPanel.ViewModels
-@model ProductCreateVM
-
 <div class="col-md-6 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
@@ -119,4 +42,4 @@
             </form>
         </div>
     </div>
-</div> *@
+</div>
