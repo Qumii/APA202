@@ -17,9 +17,9 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var categories = await _context.Categories
+           List<Category> categories = await _context.Categories
                 .Where(c => !c.IsDeleted)
-                .Include(c => c.Products)
+                .Include(c => c.Products.Where(p=>!p.IsDeleted))
                 .ToListAsync();
 
             return View(categories);
@@ -36,7 +36,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(category);
+                return View();
             }
 
             bool existCategory = await _context.Categories.AnyAsync(c => c.Name.Trim() == category.Name.Trim());
@@ -44,13 +44,13 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
             if (existCategory)
             {
                 ModelState.AddModelError("Name", "Category already exist");
-                return View(category);
+                return View();
             }
 
             await _context.AddAsync(category);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            return View(category);
         }
 
         public async Task<IActionResult> Detail(int? id)
