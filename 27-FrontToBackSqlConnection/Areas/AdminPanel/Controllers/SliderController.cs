@@ -20,16 +20,20 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var sliders = await _context.Sliders
+            List<Slider> sliders = await _context.Sliders
                 .Where(s => !s.IsDeleted)
                 .ToListAsync();
 
             return View(sliders);
         }
+
+
         public IActionResult Create()
         {
             return View();
         }
+
+
         [HttpPost]
         public async Task<IActionResult> Create(Slider slider)
         {
@@ -37,21 +41,24 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 
             if (!slider.Photo.ContentType.Contains("image/"))
             {
-                ModelState.AddModelError(nameof(Slider.Photo), "Please select an image file.");
+                ModelState.AddModelError(nameof(Slider.Photo), "File type is incorrect!");
                 return View(slider);
             }
 
             if (slider.Photo.Length > 2 * 1024 * 1024)
             {
-                ModelState.AddModelError(nameof(Slider.Photo), "Image size must be less than 2MB.");
+                ModelState.AddModelError(nameof(Slider.Photo), "Image size must be less than 2MB!");
                 return View(slider);
             }
 
-            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(slider.Photo.FileName);
+            //slider.Image = slider.Photo.FileName;
 
-            var filePath = Path.Combine(_env.WebRootPath, "assets", "images", "website-images", fileName);
 
-            using (var stream = new FileStream(filePath, FileMode.Create))
+            string fileName = Guid.NewGuid().ToString() + Path.GetExtension(slider.Photo.FileName);
+
+            string path = Path.Combine(_env.WebRootPath, "assets", "images", "website-images", fileName);
+
+            using (var stream = new FileStream(path, FileMode.Create))
             {
                 await slider.Photo.CopyToAsync(stream);
             }
@@ -63,6 +70,10 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+
+
+
         public async Task<IActionResult> Detail(int? id)
         {
             if (id is null || id < 1) return BadRequest();
