@@ -50,7 +50,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
             await _context.AddAsync(category);
             await _context.SaveChangesAsync();
 
-            return View(category);
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Detail(int? id)

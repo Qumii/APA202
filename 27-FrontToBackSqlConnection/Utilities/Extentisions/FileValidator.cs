@@ -27,9 +27,9 @@ namespace _27_FrontToBackSqlConnection.Utilities.Extentisions
             return false;
         }
 
-        public static Task<string> CreateFile(this IFormFile file, params string[] roots)
-        { 
+        //public static Task<string> CreateFile(this IFormFile file, params string[] roots)
+        //{ 
 
-        }
+        //}
     }
 }
