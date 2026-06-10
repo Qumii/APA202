@@ -3,13 +3,14 @@
 //using _27_FrontToBackSqlConnection.Data;
 //using _27_FrontToBackSqlConnection.Models;
 //using _27_FrontToBackSqlConnection.Utilities.Enums;
-//using _27_FrontToBackSqlConnection.Utilities.Extentions;
+//using _27_FrontToBackSqlConnection.Utilities.Extentisions;
 //using Microsoft.AspNetCore.Mvc;
 //using Microsoft.EntityFrameworkCore;
 
 //namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 //{
 //    [Area("AdminPanel")]
+//    [Authorize(Roles = "Admin, Moderator")]
 //    public class ProductController : Controller
 //    {
 //        private readonly AppDbContext _context;
@@ -58,13 +59,13 @@
 
 //            if (!ModelState.IsValid) return View(productCreateVM);
 
-//            if (!productCreateVM.MainPhoto.CheckFileType("/image"))
+//            if (!productCreateVM.MainPhoto.CheckFileType("image/"))
 //            {
 //                ModelState.AddModelError(nameof(ProductCreateVM.MainPhoto), "File type must be image.");
 //                return View(productCreateVM);
 //            }
 
-//            if (!productCreateVM.HoverPhoto.CheckFileType("/image"))
+//            if (!productCreateVM.HoverPhoto.CheckFileType("image/"))
 //            {
 //                ModelState.AddModelError(nameof(ProductCreateVM.HoverPhoto), "File type must be image.");
 //                return View(productCreateVM);
@@ -297,7 +298,7 @@
 //        private readonly AppDbContext _context;
 //        private readonly IWebHostEnvironment _env;
 
-//        public ProductController(AppDbContext context, IWebHostEnvironment env) 
+//        public ProductController(AppDbContext context, IWebHostEnvironment env)
 //        {
 //            _context = context;
 //            _env = env;
@@ -326,17 +327,17 @@
 
 //            if (id is null || id < 1) return BadRequest();
 
-//            Product? product = await _context.Products.FirstOrDefaultAsync(p=>p.Id==id);
+//            Product? product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
 //            if (product is null) return NotFound();
 
 //            ProductUpdateVM productUpdateVM = new()
-//            { 
+//            {
 //                Name = product.Name,
 //                Price = product.Price,
 //                SKU = product.SKU,
 //                Description = product.Description,
 //                CategoryId = product.CategoryId,
-//                Categories= await _context.Categories.Where(c=> !c.IsDeleted).ToListAsync(),
+//                Categories = await _context.Categories.Where(c => !c.IsDeleted).ToListAsync(),
 //            };
 
 //            return View(productUpdateVM);

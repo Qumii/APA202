@@ -1,5 +1,8 @@
 using _27_FrontToBackSqlConnection.Data;
+using _27_FrontToBackSqlConnection.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace _27_FrontToBackSqlConnection
 {
@@ -17,9 +20,25 @@ namespace _27_FrontToBackSqlConnection
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("default"));
             });
 
+
+            builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+            {
+                opt.Password.RequiredLength = 8;
+                opt.User.RequireUniqueEmail=true;
+                opt.Lockout.MaxFailedAccessAttempts = 3;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
             var app = builder.Build();
 
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
 
             app.MapControllerRoute(
                 name: "admin",

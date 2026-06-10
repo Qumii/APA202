@@ -1,0 +1,202 @@
+﻿@model RegisterVM
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<title>Onix Digital Marketing HTML5 Template</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!-- Additional CSS Files -->
+	<link rel="stylesheet" href="~/assets/css/fontawesome.css">
+	<link rel="stylesheet" href="~/assets/css/templatemo-onix-digital.css">
+	<link rel="stylesheet" href="~/assets/css/animated.css">
+	<link rel="stylesheet" href="~/assets/css/owl.css">
+	<!--
+
+	TemplateMo 565 Onix Digital
+
+	https://templatemo.com/tm-565-onix-digital
+
+	-->
+</head>
+
+<style>
+	body {
+		font-family: 'Poppins', sans-serif;
+		background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		padding: 20px;
+	}
+
+	.row {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.card {
+		border: none !important;
+		border-radius: 15px !important;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+		background: #ffffff;
+		width: 100%;
+	}
+
+	.card-body {
+		padding: 2.5rem !important;
+	}
+
+	.card-title {
+		font-weight: 700 !important;
+		color: #333;
+		margin-bottom: 30px !important;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 22px;
+		letter-spacing: 0.5px;
+	}
+
+	.form-group {
+		margin-bottom: 20px !important;
+	}
+
+		.form-group label {
+			font-weight: 500;
+			color: #495057;
+			margin-bottom: 8px;
+			font-size: 14px;
+			display: inline-block;
+		}
+
+	.form-control {
+		border-radius: 8px !important;
+		padding: 12px 15px !important;
+		font-size: 14px !important;
+		border: 1px solid #ced4da !important;
+		background-color: #fff !important;
+		transition: all 0.3s ease !important;
+		height: auto !important;
+	}
+
+		.form-control:focus {
+			border-color: #0d6efd !important;
+			box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15) !important;
+			outline: 0;
+		}
+
+	.text-danger {
+		font-size: 12px;
+		margin-top: 5px;
+		display: block;
+		font-weight: 500;
+	}
+
+	.btn {
+		padding: 12px 25px !important;
+		font-weight: 600 !important;
+		border-radius: 8px !important;
+		font-size: 15px !important;
+		transition: all 0.2s ease;
+	}
+
+	.btn-primary {
+		background-color: #0d6efd !important;
+		border-color: #0d6efd !important;
+		color: #fff !important;
+	}
+
+		.btn-primary:hover {
+			background-color: #0b5ed7 !important;
+			border-color: #0a58ca !important;
+		}
+
+	.btn-light {
+		background-color: #f8f9fa !important;
+		border: 1px solid #ddd !important;
+		color: #212529 !important;
+		text-decoration: none;
+		display: inline-block;
+		text-align: center;
+	}
+
+		.btn-light:hover {
+			background-color: #e2e6ea !important;
+			color: #212529 !important;
+		}
+</style>
+
+<div class="row">
+	<div class="col-md-6 grid-margin stretch-card">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Register</h4>
+				<form class="forms-sample" method="post">
+					<div asp-validation-summary="ModelOnly"></div>
+					<div class="form-group">
+						<label for="Name">Name</label>
+						<input asp-for="Name" class="form-control" placeholder="Name">
+						<span asp-validation-for="Name" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label for="Surname">Surname</label>
+						<input asp-for="Surname" type="text" class="form-control" placeholder="Surname">
+						<span asp-validation-for="Surname" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label for="Username">Username</label>
+						<input asp-for="Username" type="text" class="form-control" placeholder="Username">
+						<span asp-validation-for="Username" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label for="Email">Email</label>
+						<input asp-for="Email" type="text" class="form-control" placeholder="Email">
+						<span asp-validation-for="Email" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label for="Password">Password</label>
+						<input asp-for="Password" class="form-control" placeholder="Password">
+						<span asp-validation-for="Password" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label for="ConfrimPassword">Confrim password</label>
+						<input asp-for="ConfrimPassword" class="form-control" placeholder="Confrim password">
+						<span asp-validation-for="ConfrimPassword" class="text-danger"></span>
+					</div>
+
+					<button type="submit" class="btn btn-primary me-2">Submit</button>
+					<a asp-controller="home" asp-action="index" class="btn btn-light">Cancel</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script src="~/vendor/jquery/jquery.min.js"></script>
+<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/js/owl-carousel.js"></script>
+<script src="~/assets/js/animation.js"></script>
+<script src="~/assets/js/imagesloaded.js"></script>
+<script src="~/assets/js/custom.js"></script>
+
+
+</html>

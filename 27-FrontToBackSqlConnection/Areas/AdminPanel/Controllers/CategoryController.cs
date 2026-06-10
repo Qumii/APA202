@@ -1,12 +1,14 @@
 ﻿using _27_FrontToBackSqlConnection.Data;
 using _27_FrontToBackSqlConnection.Models;
 using AspNetCoreGeneratedDocument;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
+    [Authorize(Roles = "Admin, Moderator")]
     public class CategoryController : Controller
     {
         private readonly AppDbContext _context;
@@ -126,5 +128,7 @@ namespace _27_FrontToBackSqlConnection.Areas.AdminPanel.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+
     }
 }

@@ -27,9 +27,39 @@ namespace _27_FrontToBackSqlConnection.Utilities.Extentisions
             return false;
         }
 
-        //public static Task<string> CreateFile(this IFormFile file, params string[] roots)
-        //{ 
 
-        //}
+        public static async Task<string> CreateFile(this IFormFile file, params string[] roots)
+        {
+            string fileName = string.Concat(Guid.NewGuid().ToString(), file.FileName);
+
+            string path = string.Empty;
+
+            for (int i = 0; i < roots.Length; i++)
+            {
+                path = Path.Combine(path, roots[i]);
+            }
+
+            path = Path.Combine(path, fileName);
+
+            using (FileStream fileStream = new(path, FileMode.Create))
+            {
+                await file.CopyToAsync(fileStream);
+            }
+            return fileName;
+        }
+
+        public static void DeleteFile(this string fileName, params string[] roots)
+        {
+            string path = string.Empty;
+
+            for (int i = 0; i < roots.Length; i++)
+            {
+                path = Path.Combine(path, roots[i]);
+            }
+
+            path = Path.Combine(path, fileName);
+
+            File.Delete(path);
+        }
     }
 }
